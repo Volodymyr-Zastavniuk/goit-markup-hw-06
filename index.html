@@ -398,14 +398,43 @@
     </footer>
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <p></p>
-        <button class="modal-button" type="button" data-modal-close>
+      <form class="modal">
+        <h2 class="title modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <button class="modal-button" type="button" title="Закрыть" data-modal-close>
           <svg class="modal-icon-close">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-      </div>
+
+        <label class="form-field">
+          <span class="form-label">Имя</span>
+          <input type="text" class="form-input" name="name" placeholder=" " />
+          <svg class="input-icon">
+            <use href="./images/sprite.svg#icon-input-person"></use>
+          </svg>
+        </label>
+
+        <label class="form-field">
+          <span class="form-label">Телефон</span>
+          <input type="tel" class="form-input" name="phone-number" placeholder=" " />
+          <svg class="input-icon">
+            <use href="./images/sprite.svg#icon-input-phone"></use>
+          </svg>
+        </label>
+
+        <label class="form-field">
+          <span class="form-label">Почта</span>
+          <input type="email" class="form-input" name="email" placeholder=" " />
+          <svg class="input-icon">
+            <use href="./images/sprite.svg#icon-input-email"></use>
+          </svg>
+        </label>
+
+        <label class="form-field">
+          <span class="form-label">Комментарий</span>
+          <textarea class="form-textarea" name="comment" placeholder="Введите текст"></textarea>
+        </label>
+      </form>
     </div>
     <!-- JS -->
     <script src="./js/modal.js"></script>
