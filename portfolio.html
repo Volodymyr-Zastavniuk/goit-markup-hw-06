@@ -21,7 +21,9 @@
     <header class="header">
       <div class="container nav">
         <nav class="main-nav">
-          <a class="link logo-top" href="./index.html"><span class="accent">Web</span>Studio</a>
+          <a class="link logo-top" href="./index.html" aria-label="Логотип компании WebStudio"
+            ><span class="accent">Web</span>Studio</a
+          >
           <ul class="list nav-list">
             <li><a class="link nav-link" href="./index.html">Студия</a></li>
             <li><a class="link nav-link current" href="./portfolio.html">Портфолио</a></li>
@@ -29,14 +31,23 @@
           </ul>
         </nav>
 
-        <a class="link nav-contact" href="mailto:info@devstudio.com">
-          <svg class="nav-icon" width="16px" height="12">
+        <a
+          class="link nav-contact"
+          href="mailto:info@devstudio.com"
+          aria-label="Почта компании info@example.com"
+        >
+          <svg class="nav-icon" width="16px" height="12" aria-hidden="true">
             <use href="./images/sprite.svg#icon-envelope"></use>
           </svg>
           info@devstudio.com
         </a>
-        <a class="link nav-contact" href="tel:+380961111111">
-          <svg class="nav-icon" width="10px" height="16">
+
+        <a
+          class="link nav-contact"
+          href="tel:+380961111111"
+          aria-label="Телефон компании +380-991-111-111"
+        >
+          <svg class="nav-icon" width="10px" height="16" aria-hidden="true">
             <use href="./images/sprite.svg#icon-smartphone"></use>
           </svg>
           +38 096 111 11 11
@@ -249,11 +260,28 @@
     <footer class="footer">
       <div class="container">
         <div>
-          <a class="link logo-bottom" href="./index.html"><span class="accent">Web</span>Studio</a>
+          <a class="link logo-bottom" href="./index.html" aria-label="Логотип компании WebStudio"
+            ><span class="accent">Web</span>Studio</a
+          >
           <address>
-            <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="link footer-link" href="mailto:info@example.com">info@example.com</a><br />
-            <a class="link footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
+            <p
+              class="footer-address"
+              aria-label="Адрес компании город Киев, проспект Леси Украинки, дом 26"
+            >
+              г. Киев, пр-т Леси Украинки, 26
+            </p>
+            <a
+              class="link footer-link"
+              href="mailto:info@example.com"
+              aria-label="Почта компании info@example.com"
+              >info@example.com</a
+            ><br />
+            <a
+              class="link footer-link"
+              href="tel:+380991111111"
+              aria-label="Телефон компании +380-991-111-111"
+              >+38 099 111 11 11</a
+            >
           </address>
         </div>
 
@@ -261,29 +289,29 @@
           <b class="footer-social-title"> Присоединяйтесь </b>
           <ul class="list footer-social-list">
             <li>
-              <a class="footer-social-link" aria-label="Ссылка на Instagram" href="#">
-                <svg class="team-icon">
+              <a class="footer-social-link" aria-label="Ссылка на Instagram компании" href="#">
+                <svg class="team-icon" aria-hidden="true">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-social-link" aria-label="Ссылка на Twitter" href="#">
-                <svg class="team-icon">
+              <a class="footer-social-link" aria-label="Ссылка на Twitter компании" href="#">
+                <svg class="team-icon" aria-hidden="true">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-social-link" aria-label="Ссылка на Facebook" href="#">
-                <svg class="team-icon">
+              <a class="footer-social-link" aria-label="Ссылка на Facebook компании" href="#">
+                <svg class="team-icon" aria-hidden="true">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-social-link" aria-label="Ссылка на Linkedin" href="#">
-                <svg class="team-icon">
+              <a class="footer-social-link" aria-label="Ссылка на Linkedin компании" href="#">
+                <svg class="team-icon" aria-hidden="true">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -291,27 +319,31 @@
           </ul>
         </div>
 
-        <form class="subscription">
-          <label class="subscription-field">
-            <b class="subscription-title"> Подпишитесь на рассылку </b>
-            <input
-              type="email"
-              class="subscription-input"
-              name="email"
-              placeholder="E-mail"
-              required
-            />
-          </label>
+        <div class="subscribe">
+          <b class="subscribe-title"> Подпишитесь на рассылку </b>
 
-          <!-- <div class="subscription-button-thumb"> -->
-          <button type="submit" class="button subscription-submit-button">
-            <span>Подписаться</span>
-            <svg width="24px" height="24px">
-              <use href="./images/sprite.svg#icon-subscribe"></use>
-            </svg>
-          </button>
-          <!-- </div> -->
-        </form>
+          <form class="subscribe-form" name="subscribe-form">
+            <label class="subscribe-field">
+              <input
+                type="email"
+                class="subscribe-input"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button
+              type="submit"
+              class="button subscribe-submit-button"
+              aria-label="Кнопка оформить подписку"
+            >
+              <span>Подписаться</span>
+              <svg width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

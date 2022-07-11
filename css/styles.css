@@ -27,11 +27,11 @@
 
 /*  Сброс стилей*/
 
-/* *,
+*,
 *::after,
 *::before {
   outline: 1px solid tomato;
-} */
+}
 
 h1,
 h2,
@@ -465,6 +465,8 @@ body {
 .footer .container {
   display: flex;
   align-items: flex-start;
+  /* justify-content: space-between; */
+  gap: 70px;
 }
 
 .logo-bottom {
@@ -474,6 +476,7 @@ body {
 }
 
 .footer-address {
+  display: inline-block;
   margin-bottom: 0px;
   color: var(--white-color);
   line-height: 1.71;
@@ -487,11 +490,13 @@ body {
 }
 
 .footer-social {
+
   margin-top: 12px;
-  margin-left: 70px;
+  /* margin-left: 70px; */
 }
 
 .footer-social-title {
+  display: inline-block;
   font-weight: 700;
   color: var(--white-color);
   font-size: 14px;
@@ -534,14 +539,14 @@ body {
   height: 20px;
 }
 
-.subscription {
-  display: flex;
-  gap: 12px;
+.subscribe {
   margin-top: 12px;
-  margin-left: 93px;
+  margin-left: 23px;
+
 }
 
-.subscription-title {
+.subscribe-title {
+  display: inline-block;
   font-weight: 700;
   color: var(--white-color);
   font-size: 14px;
@@ -549,17 +554,16 @@ body {
   text-transform: uppercase;
 }
 
-.subscription-field {
-  width: 358px;
+.subscribe-form {
   display: flex;
-  flex-direction: column;
-
+  gap: 12px;
 }
 
-.subscription-input {
+.subscribe-input {
   margin-top: 20px;
   padding: 15px 16px;
   height: 50px;
+  width: 358px;
 
   font-size: 16px;
   line-height: 1.25;
@@ -574,14 +578,14 @@ body {
   transition: border-color var(--transition-duration-function);
 }
 
-.subscription-input::placeholder {
+.subscribe-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
 
-.subscription-submit-button {
+.subscribe-submit-button {
   position: relative;
   align-self: end;
   display: flex;
@@ -621,11 +625,15 @@ body {
   left: 50%;
 
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  max-height: 581px;
+  height: 100%;
+  overflow: auto;
 
   background: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
@@ -676,6 +684,10 @@ body {
   flex-direction: column;
   margin-bottom: 10px;
 
+}
+
+.form-field-textarea {
+  margin-bottom: 20px;
 }
 
 .form-label {
@@ -741,14 +753,16 @@ body {
 
 .checkbox-field {
   position: relative;
+  display: block;
   padding-left: 36px;
-  display: inline-block;
   margin-bottom: 30px;
   line-height: 1.71;
 }
 
 .checkbox-label {
+  margin: 0;
   display: inline-block;
+  /* display: inline-block; */
 
 }
 
@@ -779,16 +793,13 @@ body {
   border-radius: 1px;
 }
 
-/* .checkbox:checked~.checkbox-icon-unchecked {
-  opacity: 0;
-} */
-
 .checkbox:checked~.checkbox-icon-checked {
   opacity: 1;
 }
 
 .checkbox-link {
-  display: inline-block;
+  /* display: inline-block; */
+  margin: 0;
   line-height: inherit;
   color: var(--accent-color);
 }
