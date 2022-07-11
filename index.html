@@ -394,13 +394,40 @@
             </li>
           </ul>
         </div>
+
+        <form class="subscription">
+          <label class="subscription-field">
+            <b class="subscription-title"> Подпишитесь на рассылку </b>
+            <input
+              type="email"
+              class="subscription-input"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+          </label>
+
+          <!-- <div class="subscription-button-thumb"> -->
+          <button type="submit" class="button subscription-submit-button">
+            <span>Подписаться</span>
+            <svg width="24px" height="24px">
+              <use href="./images/sprite.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+          <!-- </div> -->
+        </form>
       </div>
     </footer>
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <form class="modal">
         <h2 class="title modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <button class="modal-button" type="button" title="Закрыть" data-modal-close>
+        <button
+          class="modal-close-button"
+          type="button"
+          aria-label="Кнопка закрыть модальное окно"
+          data-modal-close
+        >
           <svg class="modal-icon-close">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
@@ -434,6 +461,29 @@
           <span class="form-label">Комментарий</span>
           <textarea class="form-textarea" name="comment" placeholder="Введите текст"></textarea>
         </label>
+
+        <label class="checkbox-field">
+          <input
+            type="checkbox"
+            class="checkbox visually-hidden"
+            value="agree"
+            name="agreement"
+            required
+          />
+
+          <svg class="checkbox-icon checkbox-icon-unchecked" width="16" height="15">
+            <use href="./images/sprite.svg#icon-checkbox"></use>
+          </svg>
+
+          <svg class="checkbox-icon checkbox-icon-checked" width="16" height="15">
+            <use href="./images/sprite.svg#icon-checkbox-checked"></use>
+          </svg>
+
+          <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю</span>
+          <a class="checkbox-link" href="#">Условия договора</a>
+        </label>
+
+        <button type="submit" class="button modal-submit-button">Отправить</button>
       </form>
     </div>
     <!-- JS -->

@@ -245,6 +245,7 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div>
@@ -255,6 +256,7 @@
             <a class="link footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
           </address>
         </div>
+
         <div class="footer-social">
           <b class="footer-social-title"> Присоединяйтесь </b>
           <ul class="list footer-social-list">
@@ -288,6 +290,28 @@
             </li>
           </ul>
         </div>
+
+        <form class="subscription">
+          <label class="subscription-field">
+            <b class="subscription-title"> Подпишитесь на рассылку </b>
+            <input
+              type="email"
+              class="subscription-input"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+          </label>
+
+          <!-- <div class="subscription-button-thumb"> -->
+          <button type="submit" class="button subscription-submit-button">
+            <span>Подписаться</span>
+            <svg width="24px" height="24px">
+              <use href="./images/sprite.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+          <!-- </div> -->
+        </form>
       </div>
     </footer>
   </body>
